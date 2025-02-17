@@ -3,21 +3,56 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-/* ESERCIZIO 2 (for)
+function result(par1,par2){
+  let firstString =par1.slice(0,2);
+  let secondString =par2.slice(-3);
+  const resultString= (firstString+secondString).toUpperCase();
+  console.log(resultString)
+}
+result('hello','playstation')
+
+
+/* ESEraRCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
-*/
+*/function randomArray(){
+  const array = [];
+  for(let i = 0; i < 10; i++){
+    const casualNumber = Math.floor(Math.random);
+    array.push(casualNumber);
+  }
+  return array
+}
+const casualNumber = randomArray();
+console.log(casualNumber)
 
 /* ESERCIZIO 3 (filter)
-  Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
-*/
+  Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici*/
+ /* const allNumber= (27,35,56,48,80,90)
+  const numberPari = allNumber.filter((number) => {if( number % 2 === 0 )
+  return number
+  */
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
-*/
+  */
+ const arrayNumber = [1,7,17,30,42];
+ let value= 0
+ arrayNumber.forEach(number =>{value = value + number});
+ 
+ console.log(value)
+ 
+ 
+ 
+ 
+ 
+ /* ESERCIZIO 5 (reduce)
+ Scrivi una funzione per sommare i numeri contenuti in un array
+ */
+const arrayNumber1 = [1,7,17,30,42];
+const initalValue=0;
+const valueWithSum= arrayNumber1.reduce(initialValue +  )
 
-/* ESERCIZIO 5 (reduce)
-  Scrivi una funzione per sommare i numeri contenuti in un array
-*/
+console.log(sumInitalValue)
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
@@ -172,6 +207,5 @@ const movies = [
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-/* ESERCIZIO 15 (findIndex)
-  Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
-*/
+/* ESERCIZIO 15 (findIndex)*/
+  //Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.//
