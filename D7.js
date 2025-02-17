@@ -14,23 +14,27 @@ result('hello','playstation')
 
 /* ESEraRCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
-*/function randomArray(){
+*/const variableNumber=function randomArray(){
   const array = [];
   for(let i = 0; i < 10; i++){
-    const casualNumber = Math.floor(Math.random);
+    const casualNumber = Math.floor(Math.random()*101);
     array.push(casualNumber);
   }
   return array
 }
-const casualNumber = randomArray();
-console.log(casualNumber)
+console.log(variableNumber());
+
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici*/
- /* const allNumber= (27,35,56,48,80,90)
-  const numberPari = allNumber.filter((number) => {if( number % 2 === 0 )
-  return number
-  */
+ const allNumber= [27,35,56,48,80,90]
+  const numberPari = allNumber.filter((number) => {if( number % 2 === 0 ){
+return true 
+  }else {
+    return false
+  }
+})
+
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
@@ -49,13 +53,13 @@ console.log(casualNumber)
  Scrivi una funzione per sommare i numeri contenuti in un array
  */
 const arrayNumber1 = [1,7,17,30,42];
-const initalValue = 0;
+const initialValue = 0 ;
 
-const sommaArray = (initalValue,arrayNumber1)=> {
+const sommaArray = (initialValue,arrayNumber1)=> {
   return arrayNumber1()
 }
 
-console.log(sumInitalValue)
+
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
