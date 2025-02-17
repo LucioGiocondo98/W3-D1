@@ -49,8 +49,11 @@ console.log(casualNumber)
  Scrivi una funzione per sommare i numeri contenuti in un array
  */
 const arrayNumber1 = [1,7,17,30,42];
-const initalValue=0;
-const valueWithSum= arrayNumber1.reduce(initialValue +  )
+const initalValue = 0;
+
+const sommaArray = (initalValue,arrayNumber1)=> {
+  return arrayNumber1()
+}
 
 console.log(sumInitalValue)
 
